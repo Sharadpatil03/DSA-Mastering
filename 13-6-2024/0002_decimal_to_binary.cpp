@@ -34,3 +34,35 @@ int main(){
   
     return 0;
 }
+
+
+// 2) approach 2 : divide wala :
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+
+// decimal to binary :
+
+int main(){
+
+int n;
+cin>>n;
+int ans=0;
+int power =1;
+
+while(n >0){
+    int bit= n%2;
+    ans = ans + bit*power;
+    power = power*10;
+
+
+    n= n/2;
+}
+
+cout << ans <<endl;
+
+
+    return 0;
+}
